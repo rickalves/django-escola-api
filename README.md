@@ -24,22 +24,34 @@ API REST para um app de escola.
 
 #
 
-## Como testar esse aplicativo?
+## Como testar esse projeto?
 
 1. **Primeiro passo**: Criar o VENV
 
-    ~~~
+    ~~~sh
      python -m venv venv
     ~~~
 
 2. **Segundo passo**: Iniciar o VENV
 
-    ~~~
+    ~~~sh
     source venv/Scripts/activate
     ~~~
 
 3. **Terceiro passo**: Instalar as dependencias
 
-    ~~~
+    ~~~sh
     pip install -r requirements.txt
+    ~~~
+
+4. **Quarto passo**: Iniciar o servidor Django
+
+    ~~~sh
+    python manage.py runserver
+    ~~~
+
+5. **Quinto passo**: Testar a API
+
+    ~~~sh
+    http://127.0.0.1:8000/alunos/
     ~~~

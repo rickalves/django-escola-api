@@ -14,9 +14,8 @@ class Aluno(models.Model):
     cidade = models.CharField(max_length=50)
 
     def __str__(self):
-        return f"---------Aluno----------\n"\
-               f"Nome:{self.nome}\n"\
-               f"Matricula:{self.matricula}\n"
+        return self.nome
+              
 
 
 class Curso(models.Model):
@@ -25,6 +24,4 @@ class Curso(models.Model):
     vagas = models.IntegerField(null=False)
 
     def __str__(self):
-        return f"------------Curso------------\n"\
-               f"Código:{self.codigo}\n"\
-               f"Nome:{self.nome}\n"
+        return self.nome
